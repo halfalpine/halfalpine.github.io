@@ -1,0 +1,12 @@
+<section id="projects">
+  <div class="container">
+    {% for project in site.projects %}
+    <div class="project">
+      <a href=" {{ site.github.url }}/{{ project.url }}">
+        <img src="{{ project.thumbnail }}">
+      </a>
+      <div>{{ project.title }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
