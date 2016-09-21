@@ -1,15 +1,20 @@
-<header>
+<header id="header">
   <nav>
     <div>Dirk Peters</div>
-    <ul>
-      <li><a href="#my-story">My Story</a></li>
-      <li><a href="#projects">Portfolio</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    {% for section in site.projects %}
+      <a href="{{ section.url }}">{{ section.title }}</a>
+    {% endfor %}
   </nav>
   <div>
-    <p>Dirk Peters</p>
+    <h1>Dirk Peters</h1>
     <p>Web Developer</p>
   </div>
 </header>
+
+
+<!--<ul>
+  <li><a href="#my-story">My Story</a></li>
+  <li><a href="#projects">Portfolio</a></li>
+  <li><a href="#resume">Resume</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>-->
