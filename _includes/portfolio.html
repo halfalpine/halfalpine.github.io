@@ -1,0 +1,11 @@
+<section id="portfolio">
+<div class="container">
+  {% for project in site.projects %}
+  <div class="project">
+    <a href=" {{ project.url }}">
+      <img src="{{ project.thumbnail }}"
+    </a>
+  </div>
+  {% end for %}
+</div>
+</section>
