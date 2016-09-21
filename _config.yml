@@ -24,6 +24,9 @@ url: "https://halfalpine.github.io" # the base hostname & protocol for your site
 twitter_username: halfalpine
 github_username:  halfalpine
 
+collections:
+  - projects
+
 # Build settings
 markdown: kramdown
 theme: minima
