@@ -1,17 +1,20 @@
 <section id="projects">
   <div class="container">
     <div id="project-box">
-    {% for project in site.projects %}
-    <div class="project">
-      <a href=" {{ site.github.url }}/{{ project.url }}">
-        <img class="thumb" src="{{ project.thumbnail }}">
+      {% for project in site.projects %}
+      <div class="project">
+        <a href="{{ site.github.url }}/{{ project.url }}">
+          <div class="project-content">
+          <img class="thumb" src="{{ project.thumbnail }}">
+          <div class="project-info">
+            <div class="project-title">{{ project.title }}</div>
+            <div class="project-skills">{{ project.skills }}</div>
+            <div class="project-reflection">Reflection</div>
+          </div><!--project-info-->
+        </div> <!--project-content-->
       </a>
-      <div class="project-info">
-      <div>{{ project.title }}</div>
-      <div><!--Add relevant skills here--></div>
-    </div>
-    </div>
-      {% endfor %}
-    </div>
-  </div>
+    </div><!--project-->
+    {% endfor %}
+  </div><!--project-box-->
+</div><!--container-->
 </section>
