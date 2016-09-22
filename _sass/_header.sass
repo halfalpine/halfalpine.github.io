@@ -1,10 +1,57 @@
 header
-  background-color: blue
+  background-color: lightblue
 
   nav
     display: inline-flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    width: 100%
+    padding: .25em
+    font-size: 1.25em
+
+    span
+      display: inline-block
 
   .center
     margin: auto
-    width: 50%
+    width: 100%
     text-align: center
+
+  #banner
+    padding: 3em
+    border: 1px solid black
+
+    #banner-title
+      font-size: 2.5em
+      font-weight: 700
+
+    #banner-subtitle
+      padding: 1em
+      font-size: 1.5em
+      font-weight: 700
+
+//Drop-down menu
+header
+  #drop-down
+    position: relative
+    display: inline-block
+    padding-right: .5em
+    &:hover
+      .page-list
+        display: block
+        background-color: rgba(255, 255, 255, 0.5)
+
+
+  .page-list
+    display: none
+    position: absolute
+    right: 0
+    min-width: 6em
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4)
+
+
+  .page-item
+    padding: 0.25em 1em
+    display: block
+    &:hover
+      background-color: rgba(255, 255, 255, 0.8)

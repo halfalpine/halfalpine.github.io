@@ -1,12 +1,17 @@
 <header id="header">
   <nav>
     <span>Dirk Peters</span>
-    {% for section in site.projects %}
-      <a class="header-links" href="{{ section.url }}">{{ section.title }}</a>
-    {% endfor %}
+    <div id="drop-down">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <ul class="page-list">
+        {% for section in site.data.document.sections %}
+        <li class="page-item"><a class="header-links" href="{{ section.url }}">{{ section.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div><!--drop-down-->
   </nav>
-  <div class="center">
-    <h1>Dirk Peters</h1>
-    <p>Web Developer</p>
+  <div id="banner" class="center">
+    <h1 id="banner-title">Dirk Peters</h1>
+    <p id="banner-subtitle">Web Developer</p>
   </div>
 </header>

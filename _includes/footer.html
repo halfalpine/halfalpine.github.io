@@ -1,6 +1,7 @@
 <footer>
   <p>Thanks for visiting!</p>
-  {% for section in site.projects %}
-    <a class="footer-links" href="{{ section.url }}">{{ section.title }}</a>
-  {% endfor %}
+  <p id="thanks">Made by <a href="#">@halfalpine</a> in 2016. If you want to see how the sausage is made, have a seat at table and fork this page on <a href="#">Github</a>.
+  <ul class="page-list">{% for section in site.data.document.sections %}
+    <li class="page-items"><a class="footer-links" href="{{ section.url }}">{{ section.name }}</a></li>
+  {% endfor %}</ul>
 </footer>
