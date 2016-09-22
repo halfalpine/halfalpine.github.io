@@ -1,12 +1,17 @@
 <section id="projects">
   <div class="container">
+    <div id="project-box">
     {% for project in site.projects %}
     <div class="project">
       <a href=" {{ site.github.url }}/{{ project.url }}">
-        <img src="{{ project.thumbnail }}">
+        <img class="thumb" src="{{ project.thumbnail }}">
       </a>
+      <div class="project-info">
       <div>{{ project.title }}</div>
+      <div><!--Add relevant skills here--></div>
     </div>
-    {% endfor %}
+    </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
