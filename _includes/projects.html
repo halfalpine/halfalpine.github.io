@@ -3,7 +3,7 @@
     <div id="project-box">
       {% for project in site.projects %}
       <div class="project">
-        <a href="{{ site.github.url }}{{ project.url | remove: '.html'}}">
+        <a href="{{ site.url }}/{{ project.url | remove: '.html' }}">
           <div class="project-content">
           <img class="thumb" src="{{ project.thumbnail }}">
           <div class="project-info">
