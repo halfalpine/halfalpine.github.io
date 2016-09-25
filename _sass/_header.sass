@@ -1,16 +1,28 @@
 header
-  background-color: lightblue
+  background-image: url("../images/header/skyline_silo.jpg")
+  background-size: cover
 
   nav
+    position: fixed
     display: inline-flex
     flex-wrap: nowrap
     justify-content: space-between
+    align-items: center
     width: 100%
-    padding: .25em
+    padding: .5em
+    color: white
+    background-color: black
     font-size: 1.25em
 
     span
       display: inline-block
+      vertical-align: middle
+      font-family: 'Orbitron', sans-serif
+
+    #menu-icon
+      padding: 10%
+      border: 1px solid white
+      border-radius: 10%
 
   .center
     margin: auto
@@ -18,8 +30,7 @@ header
     text-align: center
 
   #banner
-    padding: 3em
-    border: 1px solid black
+    padding: 6em 3em 3em
 
     #banner-title
       font-size: 2.5em
