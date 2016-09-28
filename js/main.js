@@ -3,9 +3,8 @@ window.onload = function() {
   // Applies pickColor to pickSquare
   var newColor = function() {
     var color = pickColor();
-    var s = pickSquare(squares.length);
-    s.style.backgroundColor="rgba(" + pickColor().join(',') + ", 1)";
-    console.log(s);
+    var square = pickSquare(squares.length);
+    square.style.backgroundColor="rgba(" + pickColor().join(',') + ", 1)";
   };
   // Creates random RGB value
   var pickColor = function(){
@@ -22,14 +21,9 @@ window.onload = function() {
   var pickSquare = function(numSquares) {
     return squares[Math.floor(Math.random() * numSquares)];
   };
-  console.log('squares', squares);
-  console.log('square1', squares[0]);
-  console.log('square2', squares[1]);
-  console.log('square3', squares[2]);
-  console.log('square4', squares[3]);
-  console.log(pickSquare(squares.length));
-  console.log(pickSquare(squares.length));
-  console.log(pickSquare(squares.length));
-  console.log(pickSquare(squares.length));
-  setInterval(() => newColor(), 5000);
+  // squares is an object, not an array
+  //squares.forEach((square) => console.log(square));
+  console.log(squares);
+  Array.prototype.forEach.call(squares, (square) => {square.style.backgroundColor="rgba(" + pickColor().join(',') + ", 1)"});
+  setInterval(() => newColor(), 2000);
 };
