@@ -1,6 +1,6 @@
 ---
 title: Simon
-url: simon
+folder: simon
 layout: default
 thumbnail: images/projects/simon-thumb.png
 ---
