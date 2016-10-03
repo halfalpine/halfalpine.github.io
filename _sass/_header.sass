@@ -47,11 +47,6 @@ header
     position: relative
     display: inline-block
     padding-right: .5em
-    &:hover
-      .page-list
-        display: block
-        background-color: rgba(56, 56, 56, 0.5)
-
 
   .page-list
     display: none
@@ -60,9 +55,11 @@ header
     min-width: 6em
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.4)
 
+  .visible
+    display: block
+    background-color: rgba(56, 56, 56, 0.5)
 
   .page-item
     padding: 0.25em 1em
     display: block
-    &:hover
-      background-color: rgba(19, 19, 19, 0.8)
+    // hover: background-color: rgba(19, 19, 19, 0.8)

@@ -39,6 +39,25 @@ var Colors = (function() {
   };
 })();
 
+var Dropdown = (function() {
+
+  var dropdown = document.querySelector('#drop-down'),
+      pagelist = document.querySelector('.page-list');
+
+
+  dropdown.addEventListener('click', function(e){
+    pagelist.classList.toggle('visible');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (event.target !== dropdown && !dropdown.contains(event.target)) {
+      pagelist.classList.remove('visible');
+    }
+  });
+
+
+})();
+
 window.onload = function() {
   Colors.init('contact');
 };
