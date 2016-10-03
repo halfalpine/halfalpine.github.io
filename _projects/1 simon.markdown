@@ -3,6 +3,5 @@ title: Simon
 folder: simon
 layout: default
 thumbnail: images/projects/simon-thumb.png
-skills: foo
-format: foo
+skills: [Javascript, jQuery, SASS, HMTL]
 ---

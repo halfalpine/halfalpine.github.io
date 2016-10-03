@@ -9,8 +9,11 @@
           <img class="thumb" src="{{ project.thumbnail }}">
           <div class="project-info">
             <div class="project-title">{{ project.title }}</div>
-            <div class="project-skills">{{ project.skills }}</div>
-            <div class="project-reflection">Reflection</div>
+            <div class="project-skills">
+              {% for skill in project.skills %}
+              <span class="each-skill">{{ skill }}</span>
+              {% endfor %}
+            </div>
           </div><!--project-info-->
         </div> <!--project-content-->
       </a>
