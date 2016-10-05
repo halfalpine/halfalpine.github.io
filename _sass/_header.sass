@@ -64,12 +64,30 @@ header
   .page-item
     padding: 0.25em 1em
     display: block
+    white-space: nowrap
+
     // hover: background-color: rgba(19, 19, 19, 0.8)
 
 @media (min-width: 415px) and (max-width: 768px)
-  
+
 
 @media (min-width: 769px)
 
   header #banner
     padding: 12em 3em 6em
+
+  header #drop-down #menu-icon
+    display: none
+
+  header .page-list
+    display: flex
+    position: relative
+    box-shadow: none
+    flex-flow: flex-end nowrap
+
+  header .page-item
+    display: inline-block
+    position: relative
+    padding: 0 0 0 5%
+    &:hover
+      opacity: 0.8
