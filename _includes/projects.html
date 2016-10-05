@@ -1,24 +1,25 @@
 <section id="projects">
   <div class="container">
+    <span class="title">Projects</span>
+
     <div id="project-box">
-      <span class="title">Projects</span>
       {% for project in site.projects %}
       <div class="project">
         <a href="{{ site.url }}/{{ project.folder }}">
           <div class="project-content">
-          <img class="thumb" src="{{ project.thumbnail }}">
-          <div class="project-info">
-            <div class="project-title">{{ project.title }}</div>
-            <div class="project-skills">
-              {% for skill in project.skills %}
-              <span class="each-skill">{{ skill }}</span>
-              {% endfor %}
-            </div>
-          </div><!--project-info-->
-        </div> <!--project-content-->
-      </a>
-    </div><!--project-->
-    {% endfor %}
-  </div><!--project-box-->
-</div><!--container-->
+            <img class="thumb" src="{{ project.thumbnail }}">
+            <div class="project-info">
+              <div class="project-title">{{ project.title }}</div>
+              <div class="project-skills">
+                {% for skill in project.skills %}
+                <span class="each-skill">{{ skill }}</span>
+                {% endfor %}
+              </div>
+            </div><!--project-info-->
+          </div> <!--project-content-->
+        </a>
+      </div><!--project-->
+      {% endfor %}
+    </div><!--project-box-->
+  </div><!--container-->
 </section>

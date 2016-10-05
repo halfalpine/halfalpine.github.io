@@ -3,6 +3,11 @@
   margin: 10% auto 0
   //padding: 5% 0 0 0
 
+  .title
+    display: table
+    margin: 0 auto
+    margin-bottom: 2%
+
   #project-box
     display: flex
     flex-wrap: wrap
@@ -54,4 +59,11 @@
 @media (min-width: 769px)
 
   #projects
-    max-width: 760px
+    max-width: 780px
+    width: 60%
+
+  #projects #project-box .project
+    width: 48%
+    margin: 1% 1% auto
+    &:hover
+      opacity: 0.8
