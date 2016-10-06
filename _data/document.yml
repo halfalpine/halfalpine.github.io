@@ -1,5 +1,5 @@
 sections:
-- {name: My Story, url: '#my-story'}
+- {name: My Story, url: '#about-me'}
 - {name: Portfolio, url: '#projects'}
 - {name: Resume, url: '#resume'}
 - {name: Contact, url: '#contact'}
