@@ -5,13 +5,11 @@
     display: block
     height: 5em
 
+  .title
+    margin: 0 auto
+
   section
     margin: 5%
-
-  .title
-    display: table
-    margin: 0 auto
-    margin-bottom: 1em
 
   .resume-section
     background-color: white
@@ -41,11 +39,21 @@
 
 @media (min-width: 415px) and (max-width: 768px)
 
+  #resume
 
+    .title
+      width: 60%
+      margin: 0 auto
 
 @media (min-width: 769px)
 
-  #resume .container
-    max-width: 780px
-    width: 80%
-    margin: auto
+  #resume
+
+    .title
+      width: 50%
+      margin: 0 auto
+
+    section
+      width: 80%
+      max-width: 780px
+      margin: 0 auto
