@@ -1,14 +1,15 @@
 #contact
+  width: 80%
+  margin: 0 auto
   margin-top: 10%
   //background-color: white
+  &:before
+    content: ''
+    display: block
+    height: 5em
 
   .title
-    display: table
     margin: 0 auto
-    &:before
-      content: ''
-      display: block
-      height: 5em
 
   #links-box
     display: flex
@@ -16,7 +17,7 @@
     justify-content: center
     margin: auto
     padding: 10% 0
-    width: 67%
+    width: 80%
 
   .contact
     width: 50%
@@ -30,3 +31,20 @@
 
   .fa
     font-size: 1.5em
+
+@media (min-width: 415px) and (max-width: 768px)
+
+  #contact
+    width: 60%
+
+
+
+@media (min-width: 768px)
+
+  #contact
+
+    .title
+      width: 50%
+
+    #links-box
+      width: 60%
