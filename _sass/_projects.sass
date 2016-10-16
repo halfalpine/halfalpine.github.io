@@ -1,6 +1,6 @@
 #projects
   width: 80%
-  margin: 10% auto 0
+  margin: 5% auto 0
   //padding: 5% 0 0 0
   &:before
     content: ''
@@ -11,19 +11,20 @@
   #project-box
     display: flex
     flex-wrap: wrap
-    justify-content: center
+    justify-content: space-between
 
   .project
     border: 2px solid black
-    border-radius: 5%
-    margin: 5% auto
+    //border-radius: 5%
+    margin: 2% auto 0
     padding: 5%
-    background-color: black
+    a
+      color: black
 
     .thumb
       display: block
       width: 100%
-      margin: auto
+      margin: 2% auto
       border: 2px solid black
 
     .project-info
@@ -54,6 +55,11 @@
 
   #projects
     .project
+      width: 48%
       padding-top: 10%
 
-@media (min-width: 769px)
+@media (min-width: 768px)
+  #projects
+    .project
+      width: 31%
+      //background-color: red
