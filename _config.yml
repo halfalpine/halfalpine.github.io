@@ -28,6 +28,8 @@ collections:
   - projects
 
 # Build settings
+gems:
+  - jekyll-redirect-from
 markdown: kramdown
 permalink: pretty
 sass:
