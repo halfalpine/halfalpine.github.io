@@ -2,6 +2,10 @@
 border: 1px solid black;
 }
 
+.mouse {
+  color: blue;
+}
+
 p {
 color: red;
 }
